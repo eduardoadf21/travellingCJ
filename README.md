@@ -10,7 +10,7 @@ as distâncias são calculadas usando a ferramenta de medida do Gimp, editor de 
 ![distancemethod](https://github.com/eduardoadf21/travellingCJ/assets/83970615/d0a85e46-ee43-496c-96a8-e4a2bd20cf88)
 
 ### coletáveis
-existem coletáveis espalhados por todo o mapa de GTA San Andreas, ao coletar todos de um tipo, CJ desbloqueia aprimoramentos.
+existem coletáveis espalhados por todo o mapa de GTA San Andreas, ao coletar todos de um tipo, CJ desbloqueia aprimoramentos:
 50 horseshoes; 50 oysters; 50 snapshots; 70 stunt jumps; 100 tags
 
 ### oysters
