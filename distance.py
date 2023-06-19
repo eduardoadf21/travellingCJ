@@ -40,7 +40,7 @@ def matrix():
         distances = []
 #    print(']')
 
-    print(matrix)
+#   print(matrix)
     return matrix
 
 
