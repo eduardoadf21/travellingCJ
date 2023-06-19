@@ -18,11 +18,9 @@ def travellingSalesmanProblem(graph, s):
         current_pathweight = 0
         # compute current path weight
         k = s
-        path=""
         print(i)
         for j in i:
             current_pathweight += graph[k][j]
-            #path += str(k) +"->"+str(j)+"; "
             print(k,j)
             k = j
         current_pathweight += graph[k][s]
@@ -32,17 +30,11 @@ def travellingSalesmanProblem(graph, s):
         # update minimum
         min_path = min(min_path, current_pathweight)
 
-    print(path)
     return min_path
  
-# Driver Code
 if __name__ == "__main__":
  
-    # matrix representation of graph
-    #graph = [[0, 275, 361, 336], [275, 0, 148, 145],
-    #        [361, 148, 0, 34], [336, 145, 34, 0]]
-
-    jorge = [[0, 274, 358, 332, 356, 448, 402, 415, 564, 395, 70, 273, 293, 386, 470, 516, 591, 599, 558, 628, 948, 943, 1001],
+    graph = [[0, 274, 358, 332, 356, 448, 402, 415, 564, 395, 70, 273, 293, 386, 470, 516, 591, 599, 558, 628, 948, 943, 1001],
             [274, 0, 149, 149, 226, 457, 512, 578, 722, 585, 335, 538, 540, 620, 653, 783, 843, 833, 788, 813, 1064, 1073, 1189],
             [358, 149, 0, 34, 103, 360, 459, 547, 677, 570, 402, 586, 648, 736, 787, 826, 863, 836, 789, 781, 984, 1001, 1148],
             [332, 149, 34, 0, 81, 333, 426, 512, 644, 535, 372, 553, 623, 713, 769, 792, 828, 801, 754, 747, 956, 971, 1115],
@@ -66,4 +58,4 @@ if __name__ == "__main__":
             [943, 1073, 1001, 971, 899, 644, 563, 528, 380, 557, 886, 783, 1055, 1131, 1290, 745, 623, 525, 524, 356, 59, 0, 286],
             [1001, 1189, 1148, 1115, 1054, 819, 689, 611, 471, 611, 934, 778, 1033, 1090, 1255, 652, 518, 443, 469, 377, 345, 286, 0]]
     s = 0
-    print(travellingSalesmanProblem(jorge, s))
+    print(travellingSalesmanProblem(graph, s))
