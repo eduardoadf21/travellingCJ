@@ -1,8 +1,8 @@
 from sys import maxsize
 import time
 from itertools import permutations
-from distance import matrix
-V = 8
+from distance import generate_graph
+V = 12
  
 def travellingSalesmanProblem(graph, s):
     # store all vertex apart from source vertex
@@ -33,14 +33,13 @@ def travellingSalesmanProblem(graph, s):
         # update minimum
         min_path = min(min_path, current_pathweight)
 
-    #print(count_perm)
     print(f'permutações = {count_perm}')
     return min_path
 
 start_time = time.time() 
 if __name__ == "__main__":
  
-    graph = matrix()
+    graph = generate_graph()
     s = 0
     print(travellingSalesmanProblem(graph, s))
 print("--- %s seconds ---" % (time.time() - start_time))

@@ -1,4 +1,5 @@
 import math 
+VERTEX = 23
 
 s = [1344,1106]
 o1 = [1532,1306]
@@ -27,21 +28,18 @@ o23 = [347,1199]
 
 oysters = [s,o1,o2,o3,o4,o5,o6,o7,o8,o9,o10,o11,o12,o13,o14,o15,o16,o17,o18,o20,o21,o22,o23]
 
-def matrix():
+def generate_graph():
     distances = []
-    matrix = [[0]*23 for i in range(23)]
-#   print('[')
-    for i in range(0, 23):
-        for j in range(0, 23):
+    graph = [[0]*VERTEX for i in range(VERTEX)]
+    for i in range(0, VERTEX):
+        for j in range(0, VERTEX):
             distance = int(math.dist(oysters[i],oysters[j]))
-            matrix[i][j] = distance
+            graph[i][j] = distance
             distances.append(distance) 
-#        print(f'{distances},')
         distances = []
-#    print(']')
 
-#   print(matrix)
-    return matrix
+    print(graph)
+    return graph
 
 
 
