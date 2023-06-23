@@ -13,3 +13,6 @@ existem coletáveis espalhados por todo o mapa de GTA San Andreas, ao coletar to
 
 ### oysters
 ![oyster](https://github.com/eduardoadf21/travellingCJ/assets/83970615/1f89035e-a19c-4f67-8369-65db4255d71d)
+
+
+teste
