@@ -2,7 +2,7 @@ from sys import maxsize
 import time
 from itertools import permutations
 from distance import generate_graph
-V = 12
+V = 7
  
 def travellingSalesmanProblem(graph, s):
     # store all vertex apart from source vertex
@@ -13,7 +13,7 @@ def travellingSalesmanProblem(graph, s):
  
     # store minimum weight Hamiltonian Cycle
     min_path = maxsize
-    next_permutation=permutations(vertex)
+    next_permutation = permutations(vertex)
     count_perm = 0
     for i in next_permutation:
         count_perm += 1
