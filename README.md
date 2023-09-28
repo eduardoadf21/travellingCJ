@@ -1,10 +1,15 @@
 ## travellingCJ
-travelling salesman solution to find best route to get all collectibles in GTA San Andreas 
+Implementação do problema do caixeiro viajante no jogo GTA San Andreas
 
-### vertex 
+CJ deve coletar todos os itens no mapa utilizando a melhor rota possível
+
+Existem 320 coletáveis pelo mapa,
+50 horseshoes; 50 oysters; 50 snapshots; 70 stunt jumps; 100 tags
+
+### vértices
 https://mapgenie.io/grand-theft-auto-san-andreas
 
-### distances
+### distâncias
 distances are calculated using GIMP, to get the coordinates of a pixel, these are used on the function generate_graph()
 
 ![distancemethod](https://github.com/eduardoadf21/travellingCJ/assets/83970615/d0a85e46-ee43-496c-96a8-e4a2bd20cf88)
